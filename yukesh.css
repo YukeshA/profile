@@ -1,0 +1,127 @@
+body{
+ 
+    background-image: url('img/back.jpg');
+    background-color: blue;
+}
+h2,h1{
+    text-align: center;
+    color: blue; 
+}
+.gallery ,.contact  ,.home{
+    min-height: 100%;
+    font-size:30px;
+
+}
+.home h2{
+    position: absolute;
+    right: 500px;top:20px;
+    font-family:monospace ;
+    font-size:70px;
+}
+section {
+  display: flex;
+  color: yellow;
+    background: no-repeat  url('img/flex4.jpg');
+    background-size: 100% 100%;
+}
+ a{
+    margin-bottom: 30px;
+    padding: 15px;
+    text-shadow: 20 30 10 5 solid green;
+    color: yellow;
+}
+
+.menu {
+  flex: 1;
+  color: yellow;
+  background-image: url('img/flex3.jpeg');
+  background-clip: 300px;background-origin: content-box
+  padding: 5px;
+
+}
+
+.home{background-image: url('img/y2.jpg');
+background-position: top;
+  background-repeat: no-repeat;
+  background-size: 100% 130%;
+  display:flex;
+}
+a{
+    padding-right: 80px;
+    text-align: center;
+    text-decoration: none;
+}
+.about{min-height: 100%;
+    background-image: url('img/flex3.jpeg');
+    background-color: coral;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size:20px;
+}
+.about-img{
+    border-radius:50%;height:70%; width:40%;float:right;border-image-slice: 30px
+}
+
+.bar{float:left;
+    width:80%;padding: 5px;display: block;
+}
+.gallery{
+    background-image: url('img/bg2.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: aquamarine;
+    padding: 3px;
+}
+
+.contact{
+    display: none;
+    background:  url('img/contact.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+footer {
+    font-size: 20px;
+    text-align: center;
+    color: #F5FFFA;
+}
+.mob-bar{
+    display: ;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 1px;
+
+}
+
+li {
+  display: none;
+}
+@media only screen and (max-width: 600px) {
+    .about-img,.bar{display: none;}
+    .menu{
+        display:none;
+    }
+    li {  
+        text-decoration-color: green;
+        display: inline;
+}
+    .home{color: green;
+         background-image: url('img/y3.jpg');
+         background-size: 100% 100%;
+    }
+    .home h2{
+        display: none;
+    }
+    .gallery{
+        font-size: 15px;
+    }
+    .gallery img{width: 80%;
+        height: 60%;
+        margin-left: 30px;
+       }
+}
